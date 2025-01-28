@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333333;">
+    <div style="max-width: 600px; margin: 40px auto; padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h1 style="color: #2c3e50; font-size: 24px; margin-bottom: 20px; text-align: center;">Verify your email</h1>
+        
+        <h3 style="color: #34495e; font-size: 18px; margin-bottom: 16px;">Hello {{ email }}</h3>
+        
+        <p style="color: #666666; line-height: 1.6; margin-bottom: 24px;">
+            Please click the button below to verify your email address:
+        </p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{validate_email}}" 
+               style="display: inline-block; 
+                      padding: 12px 24px; 
+                      background-color: #3498db; 
+                      color: #ffffff; 
+                      text-decoration: none; 
+                      border-radius: 4px; 
+                      font-weight: bold;
+                      transition: background-color 0.3s ease;">
+                Verify Email
+            </a>
+        </div>
+        
+        <p style="color: #999999; font-size: 14px; text-align: center; margin-top: 30px;">
+            If you didn't request this email, you can safely ignore it.
+        </p>
+    </div>
+</body>
+</html>
