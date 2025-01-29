@@ -17,6 +17,8 @@ from dotenv import load_dotenv
 import dj_database_url
 import os
 
+DB_URL = os.environ.get("DATABASE_URL")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -94,7 +96,6 @@ DATABASES = {
         'PASSWORD':'11001'
     },
 }
-# db_url = os.getenv("DB_URL")
 DATABASES['default'] = dj_database_url.parse("postgresql://fpc_user:lLWKbL9mGUaEFPmmvYX1dDjJWHAsAAGv@dpg-cuceg5jv2p9s73d6hqp0-a.oregon-postgres.render.com/fpc_db")
 # Using MongoDB (ODM)
 # mongoengine.connect(host=db_host, db=db_name, username=db_username, password=db_password)
